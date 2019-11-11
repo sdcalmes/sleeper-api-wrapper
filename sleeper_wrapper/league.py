@@ -103,7 +103,9 @@ class League(BaseApi):
 			else:
 				team_name = "Team name not available"
 
-			team_score = self.get_team_score(team["starters"], score_type, week)
+			# This is unecessary. Just get the points that sleeper says you have instead of doing your own calculation
+			#team_score = self.get_team_score(team["starters"], score_type, week)
+			team_score = round(team["points"],2)
 			if team_score is None:
 				team_score = 0
 
