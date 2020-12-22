@@ -51,7 +51,9 @@ A Python API wrapper for Sleeper Fantasy Football, as well as tools to simplify 
 <a name="install"></a>
 # Install
 ~~~
-pip install sleeper-api-wrapper
+git clone git@github.com:sdcalmes/sleeper-api-wrapper.git my-project
+python setup.py build
+python setup.py install
 ~~~
 
 <a name="usage"></a>
