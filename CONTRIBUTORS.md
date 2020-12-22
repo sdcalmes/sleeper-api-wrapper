@@ -12,3 +12,6 @@ sleeper-api-wrapper contributors
  
 [scipio314](https://github.com/scipio314)
   - Fixed KeyError in the get_team_score() method.
+  
+[sdcalmes](https://github.com/sdcalmes)
+  - Updated the stats endpoint for 2020

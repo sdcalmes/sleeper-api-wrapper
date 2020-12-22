@@ -25,6 +25,12 @@ class Stats(BaseApi):
         except:
             return None
 
+    def get_player_week_projections(self, projections, player_id):
+        try:
+            return next((item for item in projections if item["player_id"] == player_id), None)
+        except:
+            return None
+
     def get_player_week_score(self, stats, player_id):
         # TODO: Need to cache stats by week, to avoid continuous api calls
         result_dict = {}
