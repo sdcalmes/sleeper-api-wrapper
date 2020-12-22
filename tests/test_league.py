@@ -117,6 +117,12 @@ def test_get_close_games(capsys):
 	close_games = league.get_close_games(scoreboards, 10)
 	assert isinstance(close_games, dict)
 
+
+def test_get_scoring_settings():
+	league = League(442724598706860032)
+	scoring_settings = league.get_scoring_settings()
+	assert isinstance(scoring_settings, dict)
+
 def test_empty_roster_spots():
 	pass
 

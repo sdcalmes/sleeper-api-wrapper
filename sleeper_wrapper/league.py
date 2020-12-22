@@ -105,7 +105,7 @@ class League(BaseApi):
 
 			# This is unecessary. Just get the points that sleeper says you have instead of doing your own calculation
 			#team_score = self.get_team_score(team["starters"], score_type, week)
-			team_score = round(team["points"],2)
+			team_score = round(team["points"], 2)
 			if team_score is None:
 				team_score = 0
 
@@ -139,6 +139,10 @@ class League(BaseApi):
 					total_score += 0
 
 		return total_score
+
+
+	def get_scoring_settings(self):
+		return self._league['scoring_settings']
 
 	def empty_roster_spots(self):
 		pass
